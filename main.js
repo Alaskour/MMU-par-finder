@@ -54,7 +54,7 @@ async function extractAndSaveLink(parTitle) {
     console.log("Результат математики: " + answerMath(math));
 
     // 3. Заполнение полей
-    await page.type('input[name=username]', process.env.PASS);
+    await page.type('input[name=username]', process.env.PASSWORD);
     await page.type('input[name=password]', process.env.LOGIN);
     await page.type('input[name=answer]', `${answerMath(math)}`);
 
